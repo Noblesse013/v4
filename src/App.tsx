@@ -11,6 +11,7 @@ function App() {
   }, []);
 
   const projects = [
+    
     {
       title: "Smart-Pantry-Tracker",
       description: "A React component for managing pantry inventory, including item addition, updates, deletions, and recipe suggestions, using Firebase, Material UI and Edamam API.",
@@ -34,7 +35,36 @@ function App() {
       description: "An AI-powered tool that extracts key insights from lengthy texts and articles. ",
       tech: ["React", "Tailwind CSS", "OpenAI"],
       github: "https://github.com/Noblesse013/fio-s-ai-summarizer-app"	
+    },
+
+    {
+      title:" Ghibli Academy Portal ",
+      description: "A magical academy dashboard inspired by Studio Ghibli's aesthetic, featuring student profiles, class schedules, and mystical school management. Built with modern web technologies for an immersive magical education experience.",
+      tech: ["React", "Tailwind CSS", "Firebase", "Vite"],
+      github: "https://github.com/Noblesse013/the-ghibli-academy"
+
+
+    },
+
+    {
+
+      title:" Self-Love Generator",
+      description: "A tool for singles to embrace self-love during Valentine's. Generate personalized affirmations and reminders of your worth!",
+      tech: ["React", "Tailwind CSS", "TypeScript", "Vite"],
+      github: 'https://github.com/Noblesse013/self-love-generator'
+
+
+    },
+
+    {
+      title:" Fio's Notebook inspired Portfolio",
+      description: "A whimsical and interactive portfolio inspired by a notebook theme.",
+      tech: ["HTML", "Javascript", "CSS"],
+      github: "https://github.com/Noblesse013/my-personal-portfolio"
     }
+
+
+
   ];
 
   const skills = [
@@ -77,7 +107,7 @@ function App() {
             <a href="https://www.linkedin.com/in/mehreen-mallick-fiona/" className={`p-2 hover:text-[#FF4655] transition-colors duration-300 transform hover:scale-110 shadow-md hover:shadow-lg rounded-full ${isDarkMode ? 'bg-[#1F2326]' : 'bg-white'}`}>
               <Linkedin size={24} />
             </a>
-            <a href="mehreen.mallick.fiona@g.bracu.ac.bd" className={`p-2 hover:text-[#FF4655] transition-colors duration-300 transform hover:scale-110 shadow-md hover:shadow-lg rounded-full ${isDarkMode ? 'bg-[#1F2326]' : 'bg-white'}`}>
+            <a href="mailto:mehreen.mallick.fiona@g.bracu.ac.bd" className={`p-2 hover:text-[#FF4655] transition-colors duration-300 transform hover:scale-110 shadow-md hover:shadow-lg rounded-full ${isDarkMode ? 'bg-[#1F2326]' : 'bg-white'}`}>
               <Mail size={24} />
             </a>
           </div>
@@ -227,23 +257,130 @@ function App() {
           <div className="max-w-3xl mx-auto">
             <h2 className="text-4xl font-bold mb-8 text-[#FF4655] drop-shadow-glow">BLOG</h2>
             <div className="space-y-8">
-              <article className={`${isDarkMode ? 'bg-[#1F2326]' : 'bg-white'} p-6 rounded-lg transition-all duration-300 hover:scale-105 animate-slide-up shadow-xl hover:shadow-2xl`}>
-                <h3 className="text-xl font-bold drop-shadow-text">Simplifying Cloud Migration</h3>
-                <p className="text-[#FF4655] mt-2 drop-shadow-text">
-                Nov 29, 2024</p>
+            
+            <article className={`${isDarkMode ? 'bg-[#1F2326]' : 'bg-white'} p-6 rounded-lg transition-all duration-300 hover:scale-105 animate-slide-up shadow-xl hover:shadow-2xl`}>
+  <h3 className="text-xl font-bold drop-shadow-text">From Words to Equations: The Intersection of Sentences and Linear Algebra</h3>
+  <p className="text-[#FF4655] mt-2 drop-shadow-text">
+  Jan 22, 2025
+  </p>
+  <p className={`${isDarkMode ? 'text-gray-300' : 'text-gray-700'} mt-2 drop-shadow-text`}>
+  Linking Sentences with Linear Algebra Concepts · Linear algebra often begins with the study of systems of linear equations. However, for understanding...
+  </p>
+  <a 
+    href="https://rosiechan.hashnode.dev/from-words-to-equations-the-intersection-of-sentences-and-linear-algebra" 
+    className="mt-4 inline-block text-[#FF4655] hover:underline transition-transform duration-300 hover:translate-x-2 drop-shadow-glow"
+  >
+    Read More
+  </a>
+</article>
+            
+            <article className={`${isDarkMode ? 'bg-[#1F2326]' : 'bg-white'} p-6 rounded-lg transition-all duration-300 hover:scale-105 animate-slide-up shadow-xl hover:shadow-2xl`}>
+  <h3 className="text-xl font-bold drop-shadow-text">Machine Learning Basics: Understanding Systems of Equations</h3>
+  <p className="text-[#FF4655] mt-2 drop-shadow-text">
+  Jan 20, 2025
+  </p>
+  <p className={`${isDarkMode ? 'text-gray-300' : 'text-gray-700'} mt-2 drop-shadow-text`}>
+  Introduction to Basic Systems of Equations in Machine Learning · Introduction Linear algebra might seem like a complicated topic but it's really about...
+  </p>
+  <a 
+    href="https://rosiechan.hashnode.dev/machine-learning-basics-understanding-systems-of-equations" 
+    className="mt-4 inline-block text-[#FF4655] hover:underline transition-transform duration-300 hover:translate-x-2 drop-shadow-glow"
+  >
+    Read More
+  </a>
+</article>
+            
+            
+            
+            
+            <article className={`${isDarkMode ? 'bg-[#1F2326]' : 'bg-white'} p-6 rounded-lg transition-all duration-300 hover:scale-105 animate-slide-up shadow-xl hover:shadow-2xl`}>
+  <h3 className="text-xl font-bold drop-shadow-text">Simplifying Cloud Migration</h3>
+  <p className="text-[#FF4655] mt-2 drop-shadow-text">
+    Nov 29, 2024
+  </p>
+  <p className={`${isDarkMode ? 'text-gray-300' : 'text-gray-700'} mt-2 drop-shadow-text`}>
+    Enhance Cloud Migration Through Cost Control and Recovery Solutions
+  </p>
+  <a 
+    href="https://rosiechan.hashnode.dev/simplifying-cloud-migration-key-strategies-for-cost-and-disaster-management" 
+    className="mt-4 inline-block text-[#FF4655] hover:underline transition-transform duration-300 hover:translate-x-2 drop-shadow-glow"
+  >
+    Read More
+  </a>
+</article>
+
+<article className={`${isDarkMode ? 'bg-[#1F2326]' : 'bg-white'} p-6 rounded-lg transition-all duration-300 hover:scale-105 animate-slide-up shadow-xl hover:shadow-2xl`}>
+  <h3 className="text-xl font-bold drop-shadow-text">Virtualization, Containerization, and Microservices: What You Need to Know</h3>
+  <p className="text-[#FF4655] mt-2 drop-shadow-text">
+  Aug 30, 2024
+  </p>
+  <p className={`${isDarkMode ? 'text-gray-300' : 'text-gray-700'} mt-2 drop-shadow-text`}>
+  Introduction to Virtualization, Containerization, and Microservices for Beginners · In the world of technology, terms like virtualization,...</p>
+  <a 
+    href="https://rosiechan.hashnode.dev/unveiling-the-magic-how-large-language-models-power-everyday-tech" 
+    className="mt-4 inline-block text-[#FF4655] hover:underline transition-transform duration-300 hover:translate-x-2 drop-shadow-glow"
+  >
+    Read More
+  </a>
+</article>
+
+<article className={`${isDarkMode ? 'bg-[#1F2326]' : 'bg-white'} p-6 rounded-lg transition-all duration-300 hover:scale-105 animate-slide-up shadow-xl hover:shadow-2xl`}>
+  <h3 className="text-xl font-bold drop-shadow-text">Docker 101: Basic Commands You Need to Know</h3>
+  <p className="text-[#FF4655] mt-2 drop-shadow-text">
+  Aug 28, 2024
+  </p>
+  <p className={`${isDarkMode ? 'text-gray-300' : 'text-gray-700'} mt-2 drop-shadow-text`}>
+  Are you new to Docker and wondering where to start? Docker 101 is here to help you learn the essential commands you'll need to manage containers...   </p>
+  <a 
+    href="https://rosiechan.hashnode.dev/unveiling-the-magic-how-large-language-models-power-everyday-tech" 
+    className="mt-4 inline-block text-[#FF4655] hover:underline transition-transform duration-300 hover:translate-x-2 drop-shadow-glow"
+  >
+    Read More
+  </a>
+</article>
+
+<article className={`${isDarkMode ? 'bg-[#1F2326]' : 'bg-white'} p-6 rounded-lg transition-all duration-300 hover:scale-105 animate-slide-up shadow-xl hover:shadow-2xl`}>
+  <h3 className="text-xl font-bold drop-shadow-text">Unveiling the Magic: How Large Language Models Power Everyday Tech</h3>
+  <p className="text-[#FF4655] mt-2 drop-shadow-text">
+  Aug 27, 2024
+  </p>
+  <p className={`${isDarkMode ? 'text-gray-300' : 'text-gray-700'} mt-2 drop-shadow-text`}>
+  Have you ever wondered how your favorite voice assistant understands your commands or how Google Translate knows so many languages? Behind the scenes,...
+  </p>
+  <a 
+    href="https://rosiechan.hashnode.dev/docker-101-basic-commands-you-need-to-know" 
+    className="mt-4 inline-block text-[#FF4655] hover:underline transition-transform duration-300 hover:translate-x-2 drop-shadow-glow"
+  >
+    Read More
+  </a>
+</article>
+<article className={`${isDarkMode ? 'bg-[#1F2326]' : 'bg-white'} p-6 rounded-lg transition-all duration-300 hover:scale-105 animate-slide-up delay-150 shadow-xl hover:shadow-2xl`}>
+                <h3 className="text-xl font-bold drop-shadow-text">Getting Started with Docker: A Beginner's Guide</h3>
+                <p className="text-[#FF4655] mt-2 drop-shadow-text">Aug 26, 2024</p>
                 <p className={`${isDarkMode ? 'text-gray-300' : 'text-gray-700'} mt-2 drop-shadow-text`}>
-                Enhance Cloud Migration Through Cost Control and Recovery Solutions
+                What is Docker? Docker is a powerful tool that helps developers build, ship, and run applications by packaging everything the application needs into...
                 </p>
-                <a href="https://rosiechan.hashnode.dev/simplifying-cloud-migration-key-strategies-for-cost-and-disaster-management" className="mt-4 text-[#FF4655] hover:underline transition-transform duration-300 hover:translate-x-2 drop-shadow-glow">Read More</a>
-              </article>
-              <article className={`${isDarkMode ? 'bg-[#1F2326]' : 'bg-white'} p-6 rounded-lg transition-all duration-300 hover:scale-105 animate-slide-up delay-150 shadow-xl hover:shadow-2xl`}>
-                <h3 className="text-xl font-bold drop-shadow-text">Building Scalable Systems</h3>
-                <p className="text-[#FF4655] mt-2 drop-shadow-text">March 1, 2024</p>
-                <p className={`${isDarkMode ? 'text-gray-300' : 'text-gray-700'} mt-2 drop-shadow-text`}>
-                  Best practices for creating systems that can handle massive growth...
-                </p>
-                <button className="mt-4 text-[#FF4655] hover:underline transition-transform duration-300 hover:translate-x-2 drop-shadow-glow">Read More</button>
-              </article>
+                <a 
+    href="https://rosiechan.hashnode.dev/getting-started-with-docker-a-beginners-guide"  
+    className="mt-4 inline-block text-[#FF4655] hover:underline transition-transform duration-300 hover:translate-x-2 drop-shadow-glow"
+  > Read more </a>
+              </article> 
+
+<article className={`${isDarkMode ? 'bg-[#1F2326]' : 'bg-white'} p-6 rounded-lg transition-all duration-300 hover:scale-105 animate-slide-up shadow-xl hover:shadow-2xl`}>
+  <h3 className="text-xl font-bold drop-shadow-text">Generative AI 101: Quick Start Guide</h3>
+  <p className="text-[#FF4655] mt-2 drop-shadow-text">
+  Aug 22, 2024
+  </p>
+  <p className={`${isDarkMode ? 'text-gray-300' : 'text-gray-700'} mt-2 drop-shadow-text`}>
+  Generative AI has become a buzzword in the technology world, representing a groundbreaking shift in how we create and interact with digital content....
+  </p>
+  <a 
+    href="https://rosiechan.hashnode.dev/generative-ai-101-quick-start-guide" 
+    className="mt-4 inline-block text-[#FF4655] hover:underline transition-transform duration-300 hover:translate-x-2 drop-shadow-glow"
+  >
+    Read More
+  </a>
+</article>
             </div>
           </div>
         </section>
@@ -269,7 +406,7 @@ function App() {
                 className={`w-full px-4 py-2 ${
                   isDarkMode ? 'bg-[#1F2326]' : 'bg-white border border-gray-300'
                 } rounded-lg focus:outline-none focus:ring-2 focus:ring-[#FF4655] transition-all duration-300 shadow-md`}
-                placeholder="your.email@example.com"
+                placeholder="your.mail@example.com"
               />
             </div>
             <div className="animate-slide-up delay-300">
