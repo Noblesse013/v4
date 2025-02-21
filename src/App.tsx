@@ -413,55 +413,64 @@ function App() {
           </div>
         </section>
 
-        {/* Contact Form */}
+        {/* Connect With Me */}
         <section className="max-w-3xl mx-auto mt-16">
-          <h2 className="text-4xl font-bold mb-8 text-[#FF4655] animate-slide-up drop-shadow-glow">CONTACT ME</h2>
-          <form className="space-y-6">
-            <div className="animate-slide-up">
-              <label className="block text-sm font-medium mb-2 drop-shadow-text">Name</label>
-              <input
-                type="text"
-                className={`w-full px-4 py-2 ${
-                  isDarkMode ? 'bg-[#1F2326]' : 'bg-white border border-gray-300'
-                } rounded-lg focus:outline-none focus:ring-2 focus:ring-[#FF4655] transition-all duration-300 shadow-md`}
-                placeholder="Your name"
-              />
-            </div>
-            <div className="animate-slide-up delay-150">
-              <label className="block text-sm font-medium mb-2 drop-shadow-text">Email</label>
-              <input
-                type="email"
-                className={`w-full px-4 py-2 ${
-                  isDarkMode ? 'bg-[#1F2326]' : 'bg-white border border-gray-300'
-                } rounded-lg focus:outline-none focus:ring-2 focus:ring-[#FF4655] transition-all duration-300 shadow-md`}
-                placeholder="your.mail@example.com"
-              />
-            </div>
-            <div className="animate-slide-up delay-300">
-              <label className="block text-sm font-medium mb-2 drop-shadow-text">Message</label>
-              <textarea
-                className={`w-full px-4 py-2 ${
-                  isDarkMode ? 'bg-[#1F2326]' : 'bg-white border border-gray-300'
-                } rounded-lg focus:outline-none focus:ring-2 focus:ring-[#FF4655] transition-all duration-300 h-32 shadow-md`}
-                placeholder="Your message"
-              ></textarea>
-            </div>
-            <button
-              type="submit"
-              className="bg-[#FF4655] text-white px-8 py-3 rounded-lg hover:bg-[#FF5E6D] transition-all duration-300 transform hover:scale-105 animate-slide-up delay-450 shadow-xl hover:shadow-2xl"
+          <h2 className="text-4xl font-bold mb-8 text-[#FF4655] animate-slide-up drop-shadow-glow">CONNECT WITH ME</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <a 
+              href="https://github.com/Noblesse013" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className={`${isDarkMode ? 'bg-[#1F2326]' : 'bg-white'} p-6 rounded-lg transition-all duration-300 hover:scale-105 animate-slide-up shadow-xl hover:shadow-2xl flex flex-col items-center justify-center gap-4`}
             >
-              SEND MESSAGE
-            </button>
-          </form>
-        </section>
-      </main>
+              <Github size={32} className="text-[#FF4655]" />
+              <h3 className="text-xl font-bold drop-shadow-text">GitHub</h3>
+              <p className={`${isDarkMode ? 'text-gray-300' : 'text-gray-700'} text-center text-sm`}>
+                Check out my projects and contributions
+              </p>
+            </a>
 
-      {/* Footer */}
-      <footer className={`${isDarkMode ? 'bg-[#1F2326]' : 'bg-white'} py-8 mt-16 transition-colors duration-300 shadow-lg`}>
-        <div className="container mx-auto px-4 text-center">
-          <p className={`${isDarkMode ? 'text-gray-300' : 'text-gray-600'} drop-shadow-text`}>© 2024 Mehreen Mallick Fiona . All rights reserved.</p>
-        </div>
-      </footer>
+            <a 
+              href="https://www.linkedin.com/in/mehreen-mallick-fiona/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className={`${isDarkMode ? 'bg-[#1F2326]' : 'bg-white'} p-6 rounded-lg transition-all duration-300 hover:scale-105 animate-slide-up shadow-xl hover:shadow-2xl flex flex-col items-center justify-center gap-4`}
+              style={{ animationDelay: '150ms' }}
+            >
+              <Linkedin size={32} className="text-[#FF4655]" />
+              <h3 className="text-xl font-bold drop-shadow-text">LinkedIn</h3>
+              <p className={`${isDarkMode ? 'text-gray-300' : 'text-gray-700'} text-center text-sm`}>
+                Connect with me professionally
+              </p>
+            </a>
+
+            <a 
+              href="mailto:mehreen.mallick.fiona@g.bracu.ac.bd" 
+              className={`${isDarkMode ? 'bg-[#1F2326]' : 'bg-white'} p-6 rounded-lg transition-all duration-300 hover:scale-105 animate-slide-up shadow-xl hover:shadow-2xl flex flex-col items-center justify-center gap-4`}
+              style={{ animationDelay: '300ms' }}
+            >
+              <Mail size={32} className="text-[#FF4655]" />
+              <h3 className="text-xl font-bold drop-shadow-text">Email</h3>
+              <p className={`${isDarkMode ? 'text-gray-300' : 'text-gray-700'} text-center text-sm`}>
+                Drop me a message anytime
+              </p>
+            </a>
+          </div>
+
+          <div className={`mt-8 p-6 ${isDarkMode ? 'bg-[#1F2326]' : 'bg-white'} rounded-lg shadow-xl animate-slide-up delay-450`}>
+            <p className={`${isDarkMode ? 'text-gray-300' : 'text-gray-700'} text-center text-lg`}>
+              I'm always open to new opportunities and collaborations. Feel free to reach out through any of these platforms!
+            </p>
+          </div>
+        </section>
+
+        {/* Footer */}
+        <footer className={`${isDarkMode ? 'bg-[#1F2326]' : 'bg-white'} py-8 mt-16 transition-colors duration-300 shadow-lg`}>
+          <div className="container mx-auto px-4 text-center">
+            <p className={`${isDarkMode ? 'text-gray-300' : 'text-gray-600'} drop-shadow-text`}>© 2025 Mehreen Mallick Fiona . All rights reserved.</p>
+          </div>
+        </footer>
+      </main>
     </div>
   );
 }
